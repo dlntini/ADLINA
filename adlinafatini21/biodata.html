@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>Biodata</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url("Image/soft_pink.jfif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        header {
+            background-color: pink;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 26px;
+}
+     #scrollTopBtn {
+            display: none; 
+            position: fixed;
+            bottom: 80px; 
+            right: 30px;
+            z-index: 99;
+            width: 60px;
+            height: 60px;
+            background-color: pink;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: hotpink;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: pink;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #ddd;
+            border-radius: 8px;
+        }
+
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>My Biodata</h1>
+</header>
+
+<main>
+    <center>
+        <img src="Image/adlinantek.jpg" width="460" height="300">
+
+        <table>
+            <tr>
+                <th><center>FIELD</center></th>
+                <th><center>DETAILS</center></th>
+            </tr>
+            <tr>
+                <td><center>NAME</center></td>
+                <td><center>Adlina Fatini Binti Azizul </center></td>
+            </tr>
+            <tr>
+                <td><center>AGE</center></td>
+                <td><center>21</center></td>
+            </tr>
+            <tr>
+                <td><center>DATE OF BIRTH</center></td>
+                <td><center>12 October 2004</center></td>
+            </tr>
+            <tr>
+                <td><center>PLACE OF BIRTH</center></td>
+                <td><center>Hospital Putrajaya</center></td>
+            </tr>
+            <tr>
+                <td><center>CONTACT</center></td>
+                <td><center>+60169790144</center></td>
+            </tr>
+            <tr>
+                <td><center>ADDRESS</center></td>
+                <td><center>No 81, Taman Raja Shahriman,32000, Sitiawan, Perak</center></td>
+            </tr>
+            <tr>
+                <td><center>HOBBY</center></td>
+                <td><center>Mobile Games & Badminton</center></td>
+            </tr>
+        </table>
+<br> <br> </br>
+       
+<footer>
+    <p>&copy; 2025 Adlina Fatini. All Rights Reserved.</p>
+</footer>
+
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+
+
+<script>
+    window.onscroll = function() {
+        const btn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+   
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

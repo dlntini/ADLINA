@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Education</title> 
+
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-image: url("Image/soft_pink.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header {
+        background-color: pink;
+        font-size: 40px;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    article {
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+        background-color: aliceblue;
+        border-radius: 8px;
+    }
+
+    #scrollTopBtn {
+            display: none; 
+            position: fixed;
+            bottom: 80px; 
+            right: 30px;
+            z-index: 99;
+            width: 60px;
+            height: 60px;
+            background-color: pink;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: hotpink;
+            transform: scale(1.1);
+        }
+
+     footer {
+            background-color: pink;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+
+    .education {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .education img {
+        width: 200px;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+
+    .education .box {
+        width: 500px;
+        height: auto;
+        background: pink;
+        padding: 10px;
+        border-radius: 8px;
+        transition: width 0.5s ease;
+    }
+
+    .education .box:hover {
+        width: 1000px;
+    }
+
+    .education .box ul {
+        list-style-type: square;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .education .box ul li {
+        font-size: 1rem;
+        margin: 5px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Education Background</h2>
+</header>
+
+<article>
+
+    <div class="education">
+        <img src="Image/sk_mth.jfif" alt="SK Methodist ACS">
+        <div class="box">
+            <ul>
+                <li><b>School:</b> SK Methodist ACS</li>
+                <li><b>Level:</b> Elementary School</li>
+                <li><b>Years Attended:</b> 2011 - 2016</li>
+                <li><b>Location:</b> Sitiawan, Perak</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="education">
+        <img src="Image/smk_mth.png" alt="SMK Methodist ACS">
+        <div class="box">
+            <ul>
+                <li><b>School:</b> SMK Methodist ACS</li>
+                <li><b>Level:</b> Secondary School</li>
+                <li><b>Years Attended:</b> 2017 - 2022</li>
+                <li><b>Location:</b> Sitiawan, Perak</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="education">
+        <img src="Image/uitm_logo.jpg" alt="UiTM">
+        <div class="box">
+            <ul>
+                <li><b>University:</b> Universiti Teknologi MARA (UiTM)</li>
+                <li><b>Level:</b> Diploma</li>
+                <li><b>Years Attended:</b> 2023 - Now</li>
+                <li><b>Major:</b> Information Management</li>
+                <li><b>Location:</b> Merbok, Sungai Petani</li>
+            </ul>
+        </div>
+    </div>
+
+</article>
+<br> <br> </br>
+       
+
+<footer>
+        <p>&copy; 2025 Adlina Fatini. All Rights Reserved.</p>
+    </footer>
+
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+
+
+<script>
+    window.onscroll = function() {
+        const btn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+   
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+
+
+</body>
+</html>
+
